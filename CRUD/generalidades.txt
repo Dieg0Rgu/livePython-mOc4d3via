@@ -1,0 +1,53 @@
+texto = "Hola, mundo!"
+numero = 4114
+decimal = 3.14159
+bool = False
+
+listas = [1, 2, 3, 4, 5]
+diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+
+edad = 18
+
+## Condicionales
+
+if edad > 18:
+    print("Puedes pasar")
+else:
+    print("No puedes pasar")
+
+lista_personas = ["Juan", "Miguel", "Tomas", "Francisco"]
+
+for persona in lista_personas:
+    print(persona)
+
+# Solo ignoren lo de Fumar, tomar alcohol o tener coito con otra persona, son chistes pesados y tontos.
+
+lista_personas = [
+    {
+        "nombre": "Juan",
+        "nacimiento": "2007",
+        "apellido": "Camargo",
+        "hobbies": ["Mamar Gallo", "Estudiar", "Trabajar"]
+    },
+    {
+        "nombre": "Mariana",
+        "nacimiento": "2000",
+        "apellido": "Vargas",
+        "hobbies": ["Hacer uñas", "Modelar", "Fumar"]
+    },
+    {
+        "nombre": "Teo",
+        "nacimiento": "1999",
+        "apellido": "D'Elia",
+        "hobbies": ["Jugar futbol", "Chupar guaro", "Fornicar"]
+    },
+]
+
+def validar_edad(year:str)->bool:
+    edad = 2026 - int(year)
+    return edad >= 26
+
+for persona in lista_personas:
+        edad = validar_edad(persona["nacimiento"])
+        if edad:
+            print(f"{persona["nombre"]} {persona["apellido"]} pasa")

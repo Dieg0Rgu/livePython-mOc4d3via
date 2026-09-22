@@ -1,0 +1,58 @@
+# ============================================================
+# Gitignore del proyecto (Python + Streamlit)
+# ============================================================
+
+# --- Entornos virtuales ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Caché y bytecode de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# --- Distribución / empaquetado ---
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-log.txt
+
+# --- Pruebas y análisis estático ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Secretos y configuración local ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Registros (logs) ---
+*.log
+logs/
+
+# --- Editores / IDEs ---
+.idea/
+.vscode/
+*.swp
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+.freebuff/
